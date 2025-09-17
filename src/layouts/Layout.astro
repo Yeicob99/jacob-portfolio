@@ -15,7 +15,12 @@ import '@fontsource-variable/onest';
 		<title>Astro Basics</title>
 	</head>
 
-	<body>
+
+	<body class="relative min-h-screen w-full">
+		<!-- Fondo detrás de todo -->
+		<div class="fixed inset-0 -z-10 bg-slate-950">
+			<div class="absolute inset-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)]"></div>
+		</div>
 		<Header/>
 		<slot />
 	</body>

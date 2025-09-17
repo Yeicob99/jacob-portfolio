@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Badge from '../components/Badge.astro';
+import LinkedIn from '../icons/LinkedIn.astro';
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
@@ -10,14 +11,22 @@ import Badge from '../components/Badge.astro';
 
    <section class="w-full flex flex-col justify-center items-center mx-auto py-44 px-4">
   <div class="max-w-2xl w-full">
-    <h1 class="text-white text-4xl font-bold flex items-center gap-x-4">
+    <h1 class="text-white text-5xl font-bold flex items-center gap-x-4">
       Hey! I'm Jacob
-      <Badge>Disponible para trabajar</Badge>
+      <Badge>Available for work</Badge>
     </h1>
     <h2 class="mt-6 text-white text-xl opacity-80">
-      Web Developer & Computer Science student. 🇨🇴🇩🇴 Passionate about building unique and creative web applications.
+      <span class="text-red-200/90">Web Developer & Computer Science student.</span> <span class="text-yellow-100/90">From Colombia, living
+      in the Dominican Republic</span> <span>Passionate about building unique and creative web applications.</span>
     </h2>
+    <ul>
+      <li>
+        <a href="https://www.linkedin.com"> <LinkedIn /> </a>
+      </li>
+    </ul>
   </div>
+  
+  
 </section>
 
   </main>
