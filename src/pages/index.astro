@@ -6,49 +6,54 @@ import GitHubIcon from '../icons/GitHubIcon.astro';
 import SocialPill from '../components/SocialPill.astro';
 import MailIcon from '../icons/MailIcon.astro';
 import Experience from '../icons/Experience.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import BriefCase from '../components/BriefCase.astro';
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout title="Jacob Portfolio" description="Portafolio de Jacob: Web Developer & Computer Science student. Proyectos, contacto y más.">
   <main>
-   <section class="w-full flex flex-col justify-center items-center mx-auto py-44 px-4">
-  <div class="max-w-2xl w-full">
-    <h1 class="text-white text-5xl font-bold flex items-center gap-x-4">
-      Hey! I'm Jacob
-      <Badge>Available for work</Badge>
-    </h1>
-    <h2 class="mt-6 text-white text-xl opacity-80">
-      <span class="text-red-200/90">Web Developer & Computer Science student.</span> <span class="text-yellow-100/90">From Colombia, living
-      in the Dominican Republic</span> <span>Passionate about building unique and creative web applications.</span>
-    </h2>
-    <nav class="flex gap-x-2 mt-6">
-      <SocialPill href="https://www.linkedin.com">
-        <LinkedIn/>
-        LinkedIn
-      </SocialPill>
+    <SectionContainer id="home" class="pt-8 pb-10 text-4xl sm:pt-12 sm:pb-14 lg:pt-44 lg:pb-24">
+      
+      <div class="max-w-2xl w-full">
+        <h1 class="text-white sm:text-2xl lg:text-5xl font-bold flex items-center gap-x-4">
+          Hey! I'm Jacob
+          <Badge>Available for work</Badge>
+        </h1>
+        <h2 class="mt-6 text-white text-sm lg:text-4xl opacity-80">
+          <span class="text-red-200/90">Web Developer & Computer Science student.</span> <span class="text-yellow-100/90">From Colombia, living
+          in the Dominican Republic</span> <span>Passionate about building unique and creative web applications.</span>
+        </h2>
+        <nav class="flex gap-x-2 mt-6">
+          <SocialPill href="https://www.linkedin.com">
+            <LinkedIn/>
+            LinkedIn
+          </SocialPill>
+    
+          <SocialPill href="https://www.github.com/Yeicob99">
+            <GitHubIcon/>
+            GitHub
+          </SocialPill>
+          <SocialPill href="https://www.github.com/Yeicob99">
+            <MailIcon/>
+            yosoyjacobo23@gmail.com
+          </SocialPill>
+        </nav>
+      </div>
+      
+    </SectionContainer>
 
-      <SocialPill href="https://www.github.com/Yeicob99">
-        <GitHubIcon/>
-        GitHub
-      </SocialPill>
-      <SocialPill href="https://www.github.com/Yeicob99">
-        <MailIcon/>
-        yosoyjacobo23@gmail.com
-      </SocialPill>
-    </nav>
-  </div>
-  
-  
-</section>
-
-<section class="flex">
-  <div class="w-2/4"></div>
-    <Experience/>
-  </div>
-</section>
+    <SectionContainer id="experience" class="pt-0">
+      <div class="w-full max-w-2xl ">
+        <h2 class="text-2xl font-semibold mb-6 flex items-center gap-x-3">
+          <BriefCase class="size-7" />
+          Experience
+        </h2>
+        <Experience/>
+      </div>
+    </SectionContainer>
 
   </main>
 </Layout>
-
 

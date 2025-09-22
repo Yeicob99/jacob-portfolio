@@ -3,28 +3,30 @@ import ExperienceItem from '../icons/ExperienceItem.astro';
 //frontmatter
 const EXPERIENCE = [
     {
-        title: 'Marketing UI design in Figma',
+        title: 'Websmango – Full-Service Web Agency',
         description:
-        'All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.',
-        link: 'https://www.figma.com/file/xyz'
+        'My own web agency where I design and build complete websites for different clients, focusing on clean design and smooth user experience.',
+        link: 'https://websmango.com',
+        img: './images/WebsMango-img.png'
     },
     {
-        title: 'E-Commerce UI code in Tailwind CSS',
+        title: 'Sirius Star Lights – Custom Car Lighting',
         description:
-        'Get started with dozens of web components and interactive elements built on top of Tailwind CSS.',
-        link: 'https://www.figma.com/file/xyz'
+        'An e-commerce site I built for a car lighting brand. The goal was to create a bold and modern look that matches the unique style of their products.',
+        link: 'https://siriusstarlights.com',
+        img: './images/SiriusStarLights-img.gif'
     },
     {
-        title: 'E-Commerce UI code in Tailwind CSS',
+        title: 'ConcreTech – Construction Company Website',
         description:
-        'Get started with dozens of web components and interactive elements built on top of Tailwind CSS.',
-        link: 'https://www.figma.com/file/xyz'
+        'A professional website for a local construction company, designed to show their services clearly and give them a strong online presence. Includes a shopping cart system and e-commerce features for easy service requests and purchases.',
+        link: 'https://concretechrd.com',
+        img: './images/ConcreTech-img.png'
     },
 ];
 ---
 
-<ol class="relative border-s border-gray-200 dark:border-gray-700">    
-    
+<ol class="relative border-s border-gray-200 dark:border-gray-700 ml-3">    
     {
         EXPERIENCE.map(experience => (
             <li class="mb-10 ms-4">
@@ -32,6 +34,4 @@ const EXPERIENCE = [
             </li>
         ))
     }
-    
 </ol>
-
