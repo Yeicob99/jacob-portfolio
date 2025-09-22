@@ -1,0 +1,20 @@
+---
+const EXPERIENCE = [
+    {
+        company: "Tech Solutions Inc.",
+        role: "Frontend Developer",
+        period: "Jan 2022 - Present",
+        description: "Developed and maintained the front end of the company's main product using React and Tailwind CSS. Collaborated with designers to implement responsive designs and improve user experience.",
+        image: "./images/TechSolutions-logo.png",
+    }
+];
+---
+
+{EXPERIENCE.map(({image,company, role, period, description}) => (
+  <article>
+    <h3>{company}</h3>
+    <p><strong>{role}</strong> | {period}</p>
+    <p>{description}</p>
+    <img src={image} alt={company} />
+  </article>
+))}
