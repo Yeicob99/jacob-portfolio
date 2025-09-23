@@ -8,8 +8,8 @@ import MailIcon from '../icons/MailIcon.astro';
 import SectionContainer from '../components/SectionContainer.astro';
 import BriefCase from '../components/BriefCase.astro';
 import ProjectsIcon from '../components/ProjectsIcon.astro';
-import Projects from '../icons/Projects.astro';
-import Experience from '../components/experience.astro';
+import Projects from '../components/Projects.astro';
+import Experience from '../icons/Experience.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -47,6 +47,16 @@ import Experience from '../components/experience.astro';
       
     </SectionContainer>
 
+    <SectionContainer id="experience" class="pt-0">
+      <div class="w-full max-w-2xl ">
+        <h2 class="text-2xl font-semibold mb-6 flex items-center gap-x-3">
+          <BriefCase class="size-8" />
+          Experience
+        </h2>
+        <Experience/>
+      </div>
+    </SectionContainer>
+
     <SectionContainer id="projects" class="pt-0">
       <div class="w-full max-w-2xl ">
         <h2 class="text-2xl font-semibold mb-6 flex items-center gap-x-3">
@@ -56,19 +66,6 @@ import Experience from '../components/experience.astro';
         <Projects/>
       </div>
     </SectionContainer>
-  </main>
-
-
-  <SectionContainer id="projects" class="pt-0">
-      <div class="w-full max-w-2xl ">
-        <h2 class="text-2xl font-semibold mb-6 flex items-center gap-x-3">
-          <BriefCase class="size-8" />
-          Projects
-        </h2>
-        <Experience/>
-      </div>
-    </SectionContainer>
-    
   </main>
 </Layout>
 
