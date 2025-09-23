@@ -1,20 +1,35 @@
 ---
 const PROJECTS = [
   {
+    title: "Websmango – Full-Service Web Agency",
+    description:
+      "My own web agency where I design and build fast, modern websites for clients—clean UI, solid performance, and a smooth user experience.",
+    link: "https://websmango.com",
+    img: "./images/WebsMango-img.png",
+  },
+  {
     title: "Sirius Star Lights – Custom Car Lighting",
     description:
       "An e-commerce site I built for a car lighting brand. The goal was to create a bold and modern look that matches the unique style of their products.",
     link: "https://siriusstarlights.com",
     img: "./images/SiriusStarLights-img.gif",
-  }
+  },
+  {
+    title: "ConcreTech – Construction Company Website",
+    description:
+      "A clean, trustworthy site for a local construction company, highlighting services and past work with a simple, high-converting contact flow.",
+    link: "https://concretechrd.com",
+    img: "./images/ConcreTech-img.png",
+  },
 ];
 ---
 
+
 {PROJECTS.map(({ img, title, description, link }) => (
-  <article class="space-y-6">
+  <article class="space-y-6 pb-10">
     <h3 class="text-lg font-semibold text-yellow-100/90">{title}</h3>
     <p class="text-lg text-pretty">{description}</p>
-    <img class="rounded shadow-2xl shadow-white/15" src={img} alt={title} />
+    <img class="rounded shadow-2xl shadow-white/20" src={img} alt={title} />
     {link && (
       <p>
         <a
